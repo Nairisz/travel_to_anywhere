@@ -6,6 +6,7 @@ import numpy as np
 import statistics
 import pandas as pd
 import seaborn as sns
+import streamlit as st
 
 x = [0,3,6,7,15,10,16,5,8,1.5]
 y = [1,2,1,4.5,-1,2.5,11,6,9,12]
@@ -51,7 +52,7 @@ for i, (city, (city_x, city_y)) in enumerate(city_coords.items()):
             ax.plot([city_x, other_x], [city_y, other_y], color='gray', linestyle='-', linewidth=1, alpha=0.1)
 
 fig.set_size_inches(16, 12)
-plt.show()
+st.pyplot(fig)
 
 #population
 def initial_population(cities_list, n_population = 250):
@@ -309,4 +310,4 @@ for i, txt in enumerate(shortest_path):
 
 fig.set_size_inches(16, 12)
 # plt.grid(color='k', linestyle='dotted')
-plt.show()
+st.pyplot(fig)
