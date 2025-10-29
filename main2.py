@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="🎓", #untuk header taskbar
 )
 
-genetic = st.Page('ga.py', title='Genetic Algorithm', icon=":material/business:")
+genetic = st.Page('gen_algo.py', title='Genetic Algorithm', icon=":material/business:")
 travelling = st.Page('tsp.py', title='Travelling Salesman', icon=":material/business:")
 home = st.Page('home.py', title='Homepage', default=True, icon=":material/home:")
 
