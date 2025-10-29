@@ -10,7 +10,7 @@ MUT_RATE = 0.2
 TARGET = 'nairisz'
 
 #GENES: Options from which our population would be created.
-GENES = 'abcdefghijklmnopqrstuvwxyz'
+GENES = ' abcdefghijklmnopqrstuvwxyz'
 
 #initialization
 
@@ -116,6 +116,7 @@ def main(POP_SIZE, MUT_RATE, TARGET, GENES):
 
       population = replace(new_gen, population)
 
+      
 # python pkai print but streamlit pkai st.write
       if (population[0][1] == 0):
         st.write('Target found')
