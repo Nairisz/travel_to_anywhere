@@ -10,7 +10,7 @@ MUT_RATE = 0.2
 TARGET = 'nairisz'
 
 #GENES: Options from which our population would be created.
-GENES = ' abcdefghijklmnopqrstuvwxyz'
+GENES = 'abcdefghijklmnopqrstuvwxyz'
 
 #initialization
 
